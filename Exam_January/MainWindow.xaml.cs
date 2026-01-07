@@ -28,9 +28,10 @@ namespace Exam_January
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            #region Creating AND Adding Robots to the List
             // create robots and add them to the listbox
             HouseholdRobot robo1 = new HouseholdRobot("HouseBot", "Household", 10.0, 7.5, new List<Robot.HouseholdSkill> {});
-            HouseholdRobot robo2 = new HouseholdRobot("GardenMate", "Household", 12.0, 9.0, new List<Robot.HouseholdSkill> { });
+            HouseholdRobot robo2 = new HouseholdRobot("GardenMate", "Household", 12.0, 9.0, new List<Robot.HouseholdSkill> {});
             HouseholdRobot robo3 = new HouseholdRobot("Housemate 3000", "Household", 15.0, 15.0, new List<Robot.HouseholdSkill> {});
 
             // create delivery robots
@@ -45,6 +46,7 @@ namespace Exam_January
             robots.Add(robo4);
             robots.Add(robo5);
             robots.Add(robo6);
+            #endregion
 
             // bind the list to the ListBox
             lbxRobots.ItemsSource = robots;
@@ -58,16 +60,29 @@ namespace Exam_January
                 }
             };
 
-            // Add Gardening to GardenMate; Add Cooking and Laundry to Housemate 3000.
+            // Add Gardening to GardenMate and Add Cooking and Laundry to Housemate 3000
             robo2.AddSkill(Robot.HouseholdSkill.Gardening);
             robo3.AddSkill(Robot.HouseholdSkill.Cooking);
             robo3.AddSkill(Robot.HouseholdSkill.Laundry);
 
         }
+        //radio button selected - display only chosen type of robot
+        private void rbRobot_Checked(object sender, RoutedEventArgs e)
+        {
+            if (rbAllRobots.IsChecked == true)
+            {
+                lbxRobots.ItemsSource = robots;
+            }
+            else if (rbHousehold.IsChecked == true)
+            {
+                lbxRobots.ItemsSource = robots.OfType<HouseholdRobot>().ToList();
+            }
+            else if (rbDelivery.IsChecked == true)
+            {
+                lbxRobots.ItemsSource = robots.OfType<DeliveryRobot>().ToList();
+            }
 
 
-
-
-
+        }
     }
 }

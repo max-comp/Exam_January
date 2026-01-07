@@ -22,11 +22,11 @@
         <Label Name="lblFILTER" Content="FILTER" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24"/>
         <Label Name="lblLIST" Content="ROBOT LIST" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Grid.Column="1"/>
         <Label Name="lblDetails" Content="ROBOT DETAILS" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Grid.Column="2"/>
-        <RadioButton x:Name="rbAllRobots" Content="ALL ROBOTS" HorizontalAlignment="Left" Margin="11,78,0,0" VerticalAlignment="Top"  Height="17" Width="87" Grid.Row="1"/>
+        <RadioButton x:Name="rbAllRobots" Content="ALL ROBOTS" HorizontalAlignment="Left" Margin="11,78,0,0" VerticalAlignment="Top"  Height="17" Width="87" Grid.Row="1" Checked="rbRobot_Checked"/>
         <Image Source="C:\Users\MaksymBatrak-STUDENT\OneDrive - Atlantic TU\Documents\2 Year\OOP\Exam_January\images\robot.png" Margin="98,13,60,31" Grid.Row="1"/>
-        <RadioButton x:Name="rbHousehold" Content="HOUSEHOLD" HorizontalAlignment="Left" Margin="11,81,0,0" VerticalAlignment="Top"  Height="17" Width="87" Grid.Row="2"/>
+        <RadioButton x:Name="rbHousehold" Content="HOUSEHOLD" HorizontalAlignment="Left" Margin="11,81,0,0" VerticalAlignment="Top"  Height="16" Width="107" Grid.Row="2" Checked="rbRobot_Checked"/>
         <Image Source="C:\Users\MaksymBatrak-STUDENT\OneDrive - Atlantic TU\Documents\2 Year\OOP\Exam_January\images\household-robot.png" Margin="116,10,42,2" RenderTransformOrigin="0.56,0.868" Grid.Row="2"/>
-        <RadioButton x:Name="rbDelivery" Content="DELIVERY" HorizontalAlignment="Left" Margin="11,86,0,0" VerticalAlignment="Top"  Height="17" Width="87" Grid.Row="3"/>
+        <RadioButton x:Name="rbDelivery" Content="DELIVERY" HorizontalAlignment="Left" Margin="11,86,0,0" VerticalAlignment="Top"  Height="17" Width="87" Grid.Row="3" Checked="rbRobot_Checked"/>
         <Image Source="C:\Users\MaksymBatrak-STUDENT\OneDrive - Atlantic TU\Documents\2 Year\OOP\Exam_January\images\delivery-robot.png" Margin="116,30,42,30" Grid.Row="3"/>
 
         <ListBox x:Name="lbxRobots" HorizontalAlignment="Center" Height="301" Margin="0,50,0,0" VerticalAlignment="Top" Width="268" Grid.Column="1" Grid.RowSpan="4"/>
