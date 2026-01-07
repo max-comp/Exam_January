@@ -28,7 +28,7 @@ namespace Exam_January
         //properties
         public string Name { get; set; }
 
-        public double PowerCapacity { get; set; }  
+        public double PowerCapacity { get; set; }
 
         public double CurrentPowerKWH { get; set; }
 
@@ -83,28 +83,30 @@ namespace Exam_January
             return $"I am a {RobotType} robot.\nI can help with chores around the house\n\nSkills: {skillsList}\n{DisplayBatteryInformation()}";
         }
 
-        public class DeliveryRobot : Robot
+
+    }
+
+    public class DeliveryRobot : Robot
+    {
+        //properties
+        public DeliveryMode ModeOfDelivery { get; set; }
+        public double MaxLoadKG { get; set; }
+
+        //constructor
+        public DeliveryRobot(string name, string roboType, double powerCapacity, double currentPowerKWH, DeliveryMode mode, double maxLoadKG)
+            : base(name, roboType, powerCapacity, currentPowerKWH)
         {
-            //properties
-            public DeliveryMode ModeOfDelivery { get; set; }
-            public double MaxLoadKG { get; set; }
-
-            //constructor
-            public DeliveryRobot(string name, string roboType, double powerCapacity, double currentPowerKWH, DeliveryMode mode, double maxLoadKG)
-                : base(name, roboType, powerCapacity, currentPowerKWH)
-            {
-                ModeOfDelivery = mode;
-                MaxLoadKG = maxLoadKG;
-            }
-
-            //methods
-            public override string DescribeRobot()
-            {
-
-                return $"I am a {RobotType} robot.\n\nI specialise in delivery by {ModeOfDelivery}\nThe maximum load I can carry is {MaxLoadKG}{DisplayBatteryInformation()}";
-            }
-
+            ModeOfDelivery = mode;
+            MaxLoadKG = maxLoadKG;
         }
+
+        //methods
+        public override string DescribeRobot()
+        {
+
+            return $"I am a {RobotType} robot.\n\nI specialise in delivery by {ModeOfDelivery}\nThe maximum load I can carry is {MaxLoadKG}{DisplayBatteryInformation()}";
+        }
+
     }
 
 
