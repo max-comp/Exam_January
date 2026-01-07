@@ -49,9 +49,14 @@ namespace Exam_January
             // bind the list to the ListBox
             lbxRobots.ItemsSource = robots;
 
-
-
-
+            //display robots info in the textbox when selected
+            lbxRobots.SelectionChanged += (s, ev) =>
+            {
+                if (lbxRobots.SelectedItem is Robot selectedRobot)
+                {
+                    tbxDetails.Text = selectedRobot.DescribeRobot();
+                }
+            };
         }
 
 
