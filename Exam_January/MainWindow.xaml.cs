@@ -24,5 +24,14 @@ namespace Exam_January
         {
             InitializeComponent();
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            // create robots and add them to the listbox
+            HouseholdRobot robo1 = new HouseholdRobot("HouseBot", "Household", 10.0, 7.5, new List<Robot.HouseholdSkill> { Robot.HouseholdSkill.Cleaning, Robot.HouseholdSkill.Cooking});
+        }
+
+
+
     }
 }

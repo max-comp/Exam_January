@@ -35,21 +35,22 @@ namespace Exam_January
         public string RobotType { get; set; }
 
         //constructors
-        public Robot(string name, string type, double powerCapacity, double currentPowerKWH)
+        public Robot(string name, string roboType, double powerCapacity, double currentPowerKWH)
         {
             Name = name;
-            RobotType = type;
+            RobotType = roboType;
             PowerCapacity = powerCapacity;
             CurrentPowerKWH = currentPowerKWH;
         }
 
         //methods
 
+        // method returns remaining power as a percentage
         public double GetBatteryPercentage()
         {
             return (CurrentPowerKWH / PowerCapacity) * 100;
         }
-
+        // returns a formatted string for use in the display
         public string DisplayBatteryInformation()
         {
             return $"Battery Information\n Capacity: {PowerCapacity} KWH\n Current Power: {CurrentPowerKWH} KWH\n Battery Level: {GetBatteryPercentage():F2}%";
@@ -57,9 +58,33 @@ namespace Exam_January
 
         public abstract string DescribeRobot();
 
-        public override string ToString()
+        public override string ToString() //used to give robot name and type of robot
         {
             return $"{Name} - [{RobotType}]";
         }
     }
+
+    public class HouseholdRobot : Robot
+    {
+        //properties
+        private List<HouseholdSkill> Skills;
+
+        //constructor
+        public HouseholdRobot(string name, string roboType, double powerCapacity, double currentPowerKWH, List<HouseholdSkill> skills)
+            : base(name, roboType, powerCapacity, currentPowerKWH)
+        {
+            Skills = skills;
+        }
+
+        //methods
+        public override string DescribeRobot()
+        {
+            string skillsList = string.Join(", ", Skills);
+            return $"I am a {RobotType} robot.\nI can help with chores around the house\n\nSkills: {skillsList}\n{DisplayBatteryInformation()}";
+        }
+
+    }
+
+
+
 }
