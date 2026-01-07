@@ -57,7 +57,15 @@ namespace Exam_January
                     tbxDetails.Text = selectedRobot.DescribeRobot();
                 }
             };
+
+            // Add Gardening to GardenMate; Add Cooking and Laundry to Housemate 3000.
+            robo2.AddSkill(Robot.HouseholdSkill.Gardening);
+            robo3.AddSkill(Robot.HouseholdSkill.Cooking);
+            robo3.AddSkill(Robot.HouseholdSkill.Laundry);
+
         }
+
+
 
 
 

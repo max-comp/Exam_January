@@ -9,6 +9,7 @@ namespace Exam_January
 {
     public abstract class Robot
     {
+        //enums
         public enum HouseholdSkill
         {
             Cooking,
@@ -74,17 +75,33 @@ namespace Exam_January
             : base(name, roboType, powerCapacity, currentPowerKWH)
         {
             Skills = skills;
+            //all Household robots have Cleaning added as a skill 
+            if (!Skills.Contains(HouseholdSkill.Cleaning))
+            {
+                Skills.Add(HouseholdSkill.Cleaning);
+            }
         }
 
         //methods
         public override string DescribeRobot()
         {
             string skillsList = string.Join(", ", Skills);
-            return $"I am a {RobotType.ToLower()} robot.\nI can help with chores around the house\n\nHousehold Robot Skills: {skillsList}\n\n{DisplayBatteryInformation()}";
+            return $"I am a {RobotType.ToLower()} robot.\nI can help with chores around the house\n\nHousehold Robot Skills:\n{skillsList}\n\n{DisplayBatteryInformation()}";
         }
 
+        //method to add skills, 
+        public void AddSkill(HouseholdSkill skill)
+        {
+
+            if (!Skills.Contains(skill))
+            {
+                Skills.Add(skill);
+            }
+
+        }
 
     }
+
 
     public class DeliveryRobot : Robot
     {

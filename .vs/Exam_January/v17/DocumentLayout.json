@@ -22,24 +22,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Robot.cs",
-              "DocumentMoniker": "C:\\Users\\MaksymBatrak-STUDENT\\OneDrive - Atlantic TU\\Documents\\2 Year\\OOP\\Exam_January\\Exam_January\\Robot.cs",
-              "RelativeDocumentMoniker": "Exam_January\\Robot.cs",
-              "ToolTip": "C:\\Users\\MaksymBatrak-STUDENT\\OneDrive - Atlantic TU\\Documents\\2 Year\\OOP\\Exam_January\\Exam_January\\Robot.cs*",
-              "RelativeToolTip": "Exam_January\\Robot.cs*",
-              "ViewState": "AgIAACwAAAAAAAAAAAAuwD4AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T09:47:57.513Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -49,9 +36,22 @@
               "RelativeDocumentMoniker": "Exam_January\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\MaksymBatrak-STUDENT\\OneDrive - Atlantic TU\\Documents\\2 Year\\OOP\\Exam_January\\Exam_January\\MainWindow.xaml.cs",
               "RelativeToolTip": "Exam_January\\MainWindow.xaml.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAqwDgAAABDAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAIwEAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-07T08:56:19.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Robot.cs",
+              "DocumentMoniker": "C:\\Users\\MaksymBatrak-STUDENT\\OneDrive - Atlantic TU\\Documents\\2 Year\\OOP\\Exam_January\\Exam_January\\Robot.cs",
+              "RelativeDocumentMoniker": "Exam_January\\Robot.cs",
+              "ToolTip": "C:\\Users\\MaksymBatrak-STUDENT\\OneDrive - Atlantic TU\\Documents\\2 Year\\OOP\\Exam_January\\Exam_January\\Robot.cs*",
+              "RelativeToolTip": "Exam_January\\Robot.cs*",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAFcAAAB+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T09:47:57.513Z",
               "EditorCaption": ""
             },
             {
