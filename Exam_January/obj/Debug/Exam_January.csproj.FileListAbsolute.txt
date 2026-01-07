@@ -1,0 +1,16 @@
+C:\Users\MaksymBatrak-STUDENT\OneDrive - Atlantic TU\Documents\2 Year\OOP\Exam_January\Exam_January\obj\Debug\Exam_January.csproj.AssemblyReference.cache
+C:\Users\MaksymBatrak-STUDENT\OneDrive - Atlantic TU\Documents\2 Year\OOP\Exam_January\Exam_January\obj\Debug\MainWindow.g.cs
+C:\Users\MaksymBatrak-STUDENT\OneDrive - Atlantic TU\Documents\2 Year\OOP\Exam_January\Exam_January\obj\Debug\App.g.cs
+C:\Users\MaksymBatrak-STUDENT\OneDrive - Atlantic TU\Documents\2 Year\OOP\Exam_January\Exam_January\obj\Debug\Exam_January_MarkupCompile.cache
+C:\Users\MaksymBatrak-STUDENT\OneDrive - Atlantic TU\Documents\2 Year\OOP\Exam_January\Exam_January\obj\Debug\Exam_January_MarkupCompile.lref
+C:\Users\MaksymBatrak-STUDENT\OneDrive - Atlantic TU\Documents\2 Year\OOP\Exam_January\Exam_January\bin\Debug\Exam_January.exe.config
+C:\Users\MaksymBatrak-STUDENT\OneDrive - Atlantic TU\Documents\2 Year\OOP\Exam_January\Exam_January\bin\Debug\Exam_January.exe
+C:\Users\MaksymBatrak-STUDENT\OneDrive - Atlantic TU\Documents\2 Year\OOP\Exam_January\Exam_January\bin\Debug\Exam_January.pdb
+C:\Users\MaksymBatrak-STUDENT\OneDrive - Atlantic TU\Documents\2 Year\OOP\Exam_January\Exam_January\obj\Debug\MainWindow.baml
+C:\Users\MaksymBatrak-STUDENT\OneDrive - Atlantic TU\Documents\2 Year\OOP\Exam_January\Exam_January\obj\Debug\Exam_January.g.resources
+C:\Users\MaksymBatrak-STUDENT\OneDrive - Atlantic TU\Documents\2 Year\OOP\Exam_January\Exam_January\obj\Debug\Exam_January.Properties.Resources.resources
+C:\Users\MaksymBatrak-STUDENT\OneDrive - Atlantic TU\Documents\2 Year\OOP\Exam_January\Exam_January\obj\Debug\Exam_January.csproj.GenerateResource.cache
+C:\Users\MaksymBatrak-STUDENT\OneDrive - Atlantic TU\Documents\2 Year\OOP\Exam_January\Exam_January\obj\Debug\Exam_January.csproj.CoreCompileInputs.cache
+C:\Users\MaksymBatrak-STUDENT\OneDrive - Atlantic TU\Documents\2 Year\OOP\Exam_January\Exam_January\obj\Debug\Exam_January.exe
+C:\Users\MaksymBatrak-STUDENT\OneDrive - Atlantic TU\Documents\2 Year\OOP\Exam_January\Exam_January\obj\Debug\Exam_January.pdb
+C:\Users\MaksymBatrak-STUDENT\OneDrive - Atlantic TU\Documents\2 Year\OOP\Exam_January\Exam_January\obj\Debug\Exam_January.exe.config
