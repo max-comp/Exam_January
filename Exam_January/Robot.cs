@@ -9,6 +9,21 @@ namespace Exam_January
 {
     public abstract class Robot
     {
+        public enum HouseholdSkill
+        {
+            Cooking,
+            Cleaning,
+            Laundry,
+            Gardening,
+            Childcare
+        }
+
+        public enum DeliveryMode
+        {
+            Walking,
+            Driving,
+            Flying
+        }
 
         //properties
         public string Name { get; set; }
